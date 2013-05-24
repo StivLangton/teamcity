@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
 
-  <Target Name="Build">
+  <Target Name="Patcher">
+    <Exec Command="%something%"/>
+  </Target>
+  <Target Name="Build" DependsOnTargets="Patcher">
     <MSBuild Projects="Core\Core.csproj"/>
   </Target>
   
