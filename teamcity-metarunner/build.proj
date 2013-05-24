@@ -2,8 +2,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
 
   <Target Name="Build">
-    <MSBuild Projects="Core.csproj"/>
+    <MSBuild Projects="Core\Core.csproj"/>
   </Target>
+  
+  
+  
   
   
 </Project>
